@@ -18,13 +18,13 @@
             url: "data.json",
             datatype: "json",
             data: ({}),
-            success: function (data) {
+            success: function(data) {
                 var table = '';
-                $.each(data.outlets, function (index, value) {
+                $.each(data.outlets, function(index, value) {
                     table = table +
                         "<tr id=" + value.id +
-                        "><td class='td-center'>" + value.id +
-                        "</td><td class='td-center'>" + value.batid +
+                        "><td style='padding-left: 30px;'>" + value.id +
+                        "</td><td>" + value.batid +
                         "</td><td class='store'>" + value.storename +
                         "</td><td>" + value.points +
                         "</td><td>" + value.last_accessed +
@@ -40,10 +40,10 @@
     </script>
 </head>
 
-<body>
+<body style="background-color: #eee;">
     <div class="wrapper">
         <nav id="sidebar">
-            <div class="sidebar-header">
+            <div class="sidebar-header" style="background-color: #fafafa;">
                 <h3>Max Admin</h3>
                 <a href="#logout">Logout</a>
             </div>
@@ -80,7 +80,9 @@
                 </li>
             </ul>
         </nav>
+
         <!-- Page Content Holder -->
+
         <div id="content">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -94,28 +96,40 @@
                     </div>
                 </div>
             </nav>
-            <div class="main">
-                <h3>OUTLETS</h3>
-                <div class="row justify-content-center">
-                    <table class="table">
-                        <thead>
-                            <tr class="bottom-color">
-                                <td class="td-left">ID</td>
-                                <td>BAT ID</td>
-                                <td class='store'>Store Name</td>
-                                <td>Points</td>
-                                <td>Last Accessed</td>
-                                <td>Performance</td>
-                                <td>Assigned TME</td>
-                                <td></td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
+
+            <nav class="navbar navbar-default" style='margin-top: -20px; padding: 5px 20px;'>
+                <div class="container-fluid">
+                    <h3>OUTLETS</h3>
                 </div>
-            </div>
+            </nav>
+
+            <nav class="navbar navbar-default" style='margin-top: -30px;'>
+                <div class="container-fluid">
+                    <div class="main">
+                        <div class="row justify-content-center">
+                            <table class="table">
+                                <thead>
+                                    <tr class="bottom-color">
+                                        <td style='padding-left: 30px;'>ID</td>
+                                        <td>BAT ID</td>
+                                        <td class='store'>Store Name</td>
+                                        <td>Points</td>
+                                        <td>Last Accessed</td>
+                                        <td>Performance</td>
+                                        <td>Assigned TME</td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
         </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -123,12 +137,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
             });
 
-            $('#sidebarCollapse').on('click', function () {
+            $('#sidebarCollapse').on('click', function() {
                 $('#sidebar, #content').toggleClass('active');
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');

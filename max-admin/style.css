@@ -48,7 +48,8 @@ a:focus {
 .main {
     background-color: #FFF;
     margin-top: -10px;
-    margin-left: 30px;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 table tr td {
@@ -62,10 +63,6 @@ thead tr td {
 table tr td {
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-}
-
-table tr {
-    padding: 0 20px !important;
 }
 
 .link-color-adjust {
@@ -94,12 +91,13 @@ table tr {
     margin-left: -10px;
 }
 
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
 #sidebar {
-    width: 270px;
+    width: 310px;
     position: fixed;
     top: 0;
     left: 0;
@@ -111,7 +109,7 @@ table tr {
 }
 
 #sidebar.active {
-    margin-left: -260px;
+    margin-left: -310px;
 }
 
 #sidebar .sidebar-header {
@@ -144,10 +142,12 @@ table tr {
 a[aria-expanded="true"] {
     color: #4d88ff;
     background: lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 a[data-toggle="collapse"] {
     position: relative;
+    background-color: #DDD;
 }
 
 a[aria-expanded="false"]::before,
@@ -165,10 +165,9 @@ a[aria-expanded="true"]::before {
 }
 
 ul ul a {
-    margin-left: 20px;
     font-size: 1em !important;
-    padding-left: 30px !important;
-    background: #fafafa;
+    padding-left: 50px !important;
+    background: #DDD;
 }
 
 ul.CTAs {
@@ -183,6 +182,7 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -190,7 +190,7 @@ ul.CTAs a {
 #content {
     width: calc(100% - 300px);
     padding: 0px 20px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     transition: all 0.3s;
     position: absolute;
     top: 0;
@@ -201,11 +201,36 @@ ul.CTAs a {
     width: 100%;
 }
 
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 
-@media (max-width: 200px) {
+@media (max-width: 600px) {
+    body {
+        background-color: #FFF;
+    }
+    #sidebar {
+        margin-left: -100px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 210px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        background-color: #FFF;
+    }
     #sidebar {
         margin-left: -100px;
     }
