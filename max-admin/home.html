@@ -29,7 +29,7 @@
                         "</td><td>" + value.points +
                         "</td><td>" + value.last_accessed +
                         "</td><td class='status-sm'>Target: " + value.performance[0].target +
-                        "<br>Status: " + value.performance[0].status +
+                        "<br>March, 17: " + value.performance[0].status +
                         "</td><td>" + value.assigned +
                         "</td><td><a class='link-color-adjust' href='' id=" + value.id +
                         " data-toggle='modal' data-target='#edit-model'>Edit Account</a></td></tr>";
@@ -82,26 +82,22 @@
         </nav>
         <!-- Page Content Holder -->
         <div id="content">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" id="sidebarCollapse" class="btn btn-default navbar-btn menubar-button">
-                            <i class="glyphicon glyphicon-menu-hamburger"></i>
-                            <span>
-                                <b>All Outlets</b>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </nav>
+            <div class="navbar">
+                <button type="button" id="sidebarCollapse" class="btn btn-default navbar-btn">
+                    <i class="glyphicon glyphicon-menu-hamburger"></i>
+                    <span>
+                        <b>All Outlets</b>
+                    </span>
+                </button>
+            </div>
             <div class="main">
                 <h3>OUTLETS</h3>
                 <div class="row justify-content-center">
                     <table class="table">
                         <thead>
                             <tr class="bottom-color">
-                                <td class="td-left">ID</td>
-                                <td>BAT ID</td>
+                                <td class='td-left'>ID</td>
+                                <td class='td-left'>BAT ID</td>
                                 <td class='store'>Store Name</td>
                                 <td>Points</td>
                                 <td>Last Accessed</td>

@@ -9,7 +9,7 @@
             "target": "4000",
             "status": "On target"
         }],
-        "assigned": "Barton"
+        "assigned": "Laura Barton"
     }, {
         "id": "243562",
         "batid": "254356",
@@ -18,9 +18,9 @@
         "last_accessed": "02 Feb 2018",
         "performance": [{
             "target": "5000",
-            "status": "Final"
+            "status": "On Target"
         }],
-        "assigned": "Cook"
+        "assigned": "Catherine Pope"
     }, {
         "id": "223354",
         "batid": "223367",
@@ -29,9 +29,9 @@
         "last_accessed": "01 Feb 2018",
         "performance": [{
             "target": "5000",
-            "status": "Final"
+            "status": "On Target"
         }],
-        "assigned": "Cook"
+        "assigned": "Sadie Train"
     }, {
         "id": "685936",
         "batid": "253647",
@@ -40,9 +40,9 @@
         "last_accessed": "03 Dec 2013",
         "performance": [{
             "target": "6000",
-            "status": "Pending"
+            "status": "On Target"
         }],
-        "assigned": "Gayle"
+        "assigned": "Cecelia Cook"
     }, {
         "id": "234256",
         "batid": "263745",
@@ -53,7 +53,7 @@
             "target": "5000",
             "status": "On target"
         }],
-        "assigned": "Finch"
+        "assigned": "Elizabeth Klain"
     }, {
         "id": "256373",
         "batid": "263746",
@@ -62,9 +62,9 @@
         "last_accessed": "01 Feb 2018",
         "performance": [{
             "target": "7000",
-            "status": "pending"
+            "status": "On Target"
         }],
-        "assigned": "Russel"
+        "assigned": "Angel Warren"
     }, {
         "id": "256373",
         "batid": "263746",
@@ -73,8 +73,8 @@
         "last_accessed": "01 Feb 2018",
         "performance": [{
             "target": "7000",
-            "status": "pending"
+            "status": "On Target"
         }],
-        "assigned": "Russel"
+        "assigned": "Christina Castro"
     }]
 }
