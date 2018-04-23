@@ -1,0 +1,80 @@
+{
+    "outlets": [{
+        "id": "245556",
+        "batid": "235673",
+        "storename": "7-Eleven - George Street",
+        "points": "23567",
+        "last_accessed": "02 Jan 2018",
+        "performance": [{
+            "target": "4000",
+            "status": "On target"
+        }],
+        "assigned": "Barton"
+    }, {
+        "id": "243562",
+        "batid": "254356",
+        "storename": "7-Eleven - George Street",
+        "points": "34546",
+        "last_accessed": "02 Feb 2018",
+        "performance": [{
+            "target": "5000",
+            "status": "Final"
+        }],
+        "assigned": "Cook"
+    }, {
+        "id": "223354",
+        "batid": "223367",
+        "storename": "Cheers - HongKong Street",
+        "points": "5236",
+        "last_accessed": "01 Feb 2018",
+        "performance": [{
+            "target": "5000",
+            "status": "Final"
+        }],
+        "assigned": "Cook"
+    }, {
+        "id": "685936",
+        "batid": "253647",
+        "storename": "Cheers - Princep Street",
+        "points": "23546",
+        "last_accessed": "03 Dec 2013",
+        "performance": [{
+            "target": "6000",
+            "status": "Pending"
+        }],
+        "assigned": "Gayle"
+    }, {
+        "id": "234256",
+        "batid": "263745",
+        "storename": "7-Eleven - Princep Street",
+        "points": "25367",
+        "last_accessed": "01 Feb 2018",
+        "performance": [{
+            "target": "5000",
+            "status": "On target"
+        }],
+        "assigned": "Finch"
+    }, {
+        "id": "256373",
+        "batid": "263746",
+        "storename": "TAI SEN STORE - Serangoo..",
+        "points": "23564",
+        "last_accessed": "01 Feb 2018",
+        "performance": [{
+            "target": "7000",
+            "status": "pending"
+        }],
+        "assigned": "Russel"
+    }, {
+        "id": "256373",
+        "batid": "263746",
+        "storename": "7-Eleven - George Street",
+        "points": "24356",
+        "last_accessed": "01 Feb 2018",
+        "performance": [{
+            "target": "7000",
+            "status": "pending"
+        }],
+        "assigned": "Russel"
+    }]
+}
